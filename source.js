@@ -129,9 +129,9 @@ function invalidGuess() {
 function correct() {
 	if (guesses < 5) {
 		for (let i = 0; i < 5 - guesses; i++) {
-		let adjust = guesses + 1 + i;
-		let currLine = "codeLine" + adjust;
-		document.getElementById(currLine).innerHTML = dailyText[guesses + i];
+			let adjust = guesses + 1 + i;
+			let currLine = "codeLine" + adjust;
+			document.getElementById(currLine).innerHTML = dailyText[guesses + i];
 		}
 	}
 	if (guesses == 1) {
