@@ -1,0 +1,19 @@
+/* Main site background */
+body {
+  background-color: lightgray;
+}
+
+/* Top title div */
+.title {
+  background-color: gray;
+}
+
+/* Text of title */
+#mainTitle {
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+/* Main block of code to guess */
+.codeBlock {
+  font-family: 'Courier New', monospace;;
+}

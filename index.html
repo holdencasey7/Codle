@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Codle</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<!-- Main title at top of page -->
+	<div class="title">
+		<h1 id="mainTitle">CODLE</h1>
+	</div>
+
+	<!-- Active guess counter -->
+	<div>
+		<h3 id="guessCount">Guesses Remaining: 5</h3>
+	</div>
+
+	<!-- Code to be displayed to user -->
+	<div class="codeBlock">
+		<p id="codeLine1">*****</p>
+		<p id="codeLine2">*****</p>
+		<p id="codeLine3">*****</p>
+		<p id="codeLine4">*****</p>
+		<p id="codeLine5">*****</p>
+	</div>
+
+	<!-- Text visible only after win/loss -->
+	<div>
+		<h4 id="winlose"></h4>
+	</div>
+
+	<!-- Skip button -->
+	<div>
+		<button id="skip" onclick="missedGuess(true)">Skip</button>
+	</div>
+
+	<!-- Text field for user guess with guess button -->
+	<div>
+		<input id="guessField" type="text">
+		<button id="enter" onclick="guessed()">Guess!</button>
+		<p id="prevGuess"></p>
+	</div>
+
+	<script type="text/javascript" src="source.js"></script>
+</body>
+
+</html>
